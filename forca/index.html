@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="all">
+        <div id="mensa"><div id="msg"></div></div>
+<div id="conteudo" class="content"> <!-- Caixas da Palavra -->
+
+
+
+
+ 
+</div> 
+    <div id="content2">
+    
+        <div id="item1">
+        <div id="animacao">
+        <img src="images/0.svg" class="forca a0">
+        <img src="images/1.svg" class="forca a1">
+        <img src="images/2.svg" class="forca a2">
+        <img src="images/3.svg" class="forca a3">
+        <img src="images/4.svg" class="forca a4">
+        <img src="images/5.svg" class="forca a5">
+        <img src="images/6.svg" class="forca a6">
+            
+        
+        </div>
+        </div>
+    
+        <div id="item2">
+                
+                <div class="texto" id="letra">Digite uma Letra</div>
+                <div id="btnbox1">
+                <input type="text" id="letterbox"  maxlength="1" oninput="bloqueio()" oninput="jaTyped()" onkeydown="enterL(event)">
+                <button type="submit" id="go1" onclick="checkletra()"><img id="img1"src="images/letra.png" height ="30" width="30" /></button>
+                </div>
+                
+                <div class="texto" id="palavra">Adivinhe a Palavra</div>
+                <div id="btnbox2">
+                <input type="text" id="wordbox" oninput="bloqueio1()" onkeydown="enterP(event)">
+                <button id="go2" onclick="guess()"><img id="img2"src="images/palavra.png"/></button>
+                </div>
+                <button id="reset" onclick="perdeu()"><img id="img3"src="images/reset.png"/></button>
+            </div>
+        <div id="item3">
+            <div id="historicoLetras">
+                
+                
+            </div>
+        </div>
+   </div>
+    </div> 
+</body>
+</html>
