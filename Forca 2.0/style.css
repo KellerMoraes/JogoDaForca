@@ -1,0 +1,306 @@
+body{background-color: rgb(32, 32, 32);}
+
+#all{
+height: 100%;
+width: 100vw;
+color: white;    
+}    
+#mensagem{
+height: 15vh;
+margin-bottom:0.5rem;
+background-color: inherit;
+display: flex;
+
+}
+#msg{
+
+width:100%;
+height: 0%;
+display: flex;
+font-size: 3rem;
+justify-content: center;
+align-items: center;
+background-color: rgba(27, 27, 27, 0.91);
+opacity: 0;
+}
+#letras{
+height: 25vh;
+margin-bottom:0.5rem;
+border-bottom:1px white solid;
+background-color: rgb(28, 26, 26);    
+}
+.caixas{
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 0.02em;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  width: 1.2em;
+  height: 1.2em;
+  display: flex;
+  margin-right: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;  
+  animation-fill-mode: both;  
+  background-color: rgba(56, 55, 55, 0.583);
+  border-bottom: 1px white solid;
+
+}
+#caixaofcaixas{
+
+width: 85%;
+max-height:100% ;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#letras{
+align-items: center;
+justify-content: center;
+}
+#historico{
+height: 15vh;
+margin-bottom:0.5rem;
+justify-content: center;
+max-width: 100%;
+max-height: 100%; 
+border-bottom: 1px white solid;
+background-color: rgba(28, 28, 28, 0.832);
+
+}
+#letrasHistorico{
+text-transform: uppercase;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1%;
+width: 85%;
+max-height: 100%;
+max-width: 100%;  
+}
+.caixasH{
+color: aliceblue;
+width: 3vw;
+
+
+display: flex;
+border: 1px rgba(255, 255, 255, 0.462) dashed;
+justify-content: center;
+
+
+}
+
+#forca{
+height: 35vh;
+margin-bottom:0.5rem;
+width: 30%;
+display: flex;
+justify-content: center;
+border-bottom: 1px white solid;
+background-color: rgb(27, 24, 24);
+}
+#forcaani{
+  max-width: 90%;
+  max-height: 95%;
+}
+#procura{
+height: 35vh;
+margin-bottom:0.5rem;
+width: 70%;
+display: flex;
+border-bottom: 1px white solid;
+background-color: rgb(27, 24, 24);
+}
+
+#lettercont{
+height: 50%;
+max-height: 100%;
+max-width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+#lettertext{
+flex: 0 0 4vh;
+}
+#boxbuttonletter{
+
+display: flex;
+padding-top: 1em;
+max-width: 100%;
+max-height: 100%;
+
+align-items: center;
+}
+#letterbox{
+
+width:4rem;
+height: 4rem;
+margin-right: 1rem;
+max-width: 100%;
+max-height: 100%;
+background-color: inherit;
+color: white;
+text-transform: uppercase;
+font-size: 3rem;
+text-align: center;
+
+}
+#letterbutton{
+    width:3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+
+#wordcont{
+height: 50%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+max-width: 100%;
+max-height: 100%;
+}
+#wordbox{
+    width:25rem;
+height: 2rem;
+max-width: 80%;
+    align-items: center;
+    text-align: center;
+    background-color: inherit;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+#wordbutton{
+width: 4em;
+max-width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+   
+}
+.msgflex{
+  animation: showmsg 3s linear 100ms 1 normal;
+}
+
+
+
+
+
+@media (max-height: 660px) {
+#boxbuttonletter{
+padding-top: 0.4em;}
+#letterbox{
+width:3.5rem;
+height: 3.5rem;
+margin-right: 0.5rem;}
+#letterbutton{
+    width:2.5rem;
+    height: 2.5rem;}
+#wordcont{
+flex-direction: column;}
+#wordbox{
+width:25rem;
+height: 2rem;}
+#wordbutton{
+width: 3em;
+height: 2em;
+max-width: 100%;}
+.caixasH{font-size: 5.7vh;}}
+@media (max-height: 550px) {
+#boxbuttonletter{
+padding-top: 0.4em;}
+#letterbox{
+font-size: 2.2rem;
+width:3rem;
+height: 3rem;
+margin-right: 0.5rem;}
+#letterbutton{
+    width:2rem;
+    height: 2rem;}
+#wordcont{
+  justify-content: center;
+flex-direction: row;}
+#wordtext{
+display: none;}
+#wordbox{
+  margin-right: 0.5rem;
+width:20rem;
+height: 2rem;}
+#wordbutton{
+width: 3em;
+height: 2em;
+max-width: 100%;}}
+@media (max-height: 490px) {
+#lettercont{
+flex-direction: row;}
+#letterbox{
+font-size: 2rem;
+margin-left: 1rem;}}
+@media (max-height: 370px) {
+#lettercont{
+flex-direction: row;}
+#letterbox{
+margin-left: 1rem;
+width:2.5rem;
+height: 2.5rem;
+font-size: 1.4rem;
+;}}
+
+@media (min-width: 1501px) {
+  .caixas{font-size: 3.5vw;}
+  .caixasH{font-size: 2vw;}}
+@media (max-width: 1500px) {
+  .caixas{font-size: 3.2vw;}
+  .caixasH{font-size: 2vw;}}
+@media (max-width: 1150px) {
+  .caixas{font-size: 4vw;}
+  .caixasH{font-size: 2.7vw;}}
+@media (max-width: 770px) {
+  .caixas{font-size: 5vw;}
+  .caixasH{font-size: 4vw;}}
+@media (max-width: 650px) {
+  .caixas{font-size: 6vw;}
+  .caixasH{font-size: 4vw;}}
+@media (max-width: 520px) {
+  .caixas{font-size: 7vw;}
+  .caixasH{font-size: 5vw;}}
+@media (max-width: 400px) {
+  .caixas{font-size: 7.5vw;}
+  .caixasH{font-size: 5.5vw;}}
+@media (max-width: 300px) {
+  .caixas{font-size:8.5vw;}
+  .caixasH{font-size: 7.5vw;}}
+
+@keyframes glow {
+    0% {background-color: rgb(56, 55, 55); }
+    10% {background-color: rgb(255, 254, 244); box-shadow: 0px 0px 5px white; outline: none;}
+    90% {background-color: rgb(255, 254, 244); box-shadow: 0px 0px 5px white; outline: none;}
+    100% {background-color: rgb(56, 55, 55);-webkit-text-stroke-color: white;};
+    
+    
+}
+@keyframes glow1 {
+        0% {border-color: rgb(56, 55, 55); }
+        10% {border-color: rgb(255, 254, 244); box-shadow: 0px 0px 5px white; outline: none;}
+        90% {border-color: rgb(255, 254, 244); box-shadow: 0px 0px 5px white; outline: none;}
+        100% {border-color: rgb(253, 253, 253);-webkit-text-stroke-color: white;};
+        
+        
+}  
+
+@keyframes showmsg {
+  0%   {height:0vh;opacity:0.5;}
+  25%  {height:15vh;opacity:1;}
+  75%  {height:15vh;opacity:1;}
+  85%  {opacity:0.5;color: inherit;}
+  100% {height:0vh;opacity:0;}
+}
